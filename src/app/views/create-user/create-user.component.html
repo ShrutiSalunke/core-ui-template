@@ -1,0 +1,97 @@
+<c-row><c-col xs="12">
+  <c-col xs="12">
+    <c-card class="mb-4">
+      <c-card-header ngPreserveWhitespaces>
+        <strong>Create New User</strong>
+      </c-card-header>
+      <c-card-body>
+
+          <form cForm class="row g-3 needs-validation" ngNativeValidate>
+            <c-col md="6">
+              <label cLabel for="validationServer01">First name</label>
+              <input [valid]="true"
+                     cFormControl
+                     id="validationServer01"
+                     required
+                     type="text"
+                     value="Test"
+              />
+              <c-form-feedback [valid]="true">Looks good!</c-form-feedback>
+              <c-form-feedback [valid]="false">Please Enter Name.</c-form-feedback>
+            </c-col>
+            <c-col md="6">
+              <label cLabel for="validationServer02">Last name</label>
+              <input [valid]="true"
+                     cFormControl
+                     id="validationServer02"
+                     required
+                     type="text"
+                     value="Otto"
+              />
+              <c-form-feedback [valid]="true">Looks good!</c-form-feedback>
+            </c-col>
+            <c-col md="6">
+              <label cLabel for="validationServerUsername">Username</label>
+              <c-input-group class="has-validation">
+
+                <input [valid]="false"
+                       aria-describedby="inputGroupPrepend03"
+                       cFormControl
+                       id="validationServerUsername"
+                       required
+                       type="text"
+                />
+                <c-form-feedback [valid]="false">Please choose a username.</c-form-feedback>
+              </c-input-group>
+            </c-col>
+            <c-col md="6">
+              <label cLabel for="validationServer03">Password</label>
+              <input [valid]="false" cFormControl id="validationServer03" required type="password" />
+              <c-form-feedback [valid]="false">Please provide a password.</c-form-feedback>
+            </c-col>
+            <c-col md="4">
+              <label cLabel for="validationDefault01">Email</label>
+              <input [valid]="false" cFormControl id="validationDefault01" required type="text" value="Mark" />
+              <c-form-feedback [valid]="false">Please enter valid email</c-form-feedback>
+            </c-col>
+
+
+            <c-col md="4">
+              <label cLabel for="validationServer05">Role</label>
+              <div class="mb-3">
+                <select aria-label="select example" cSelect required>
+                  <option value="">----SELECT---</option>
+                  <option value="1">Manager</option>
+                  <option value="2">Superviser</option>
+                  <option value="3">Director</option>
+                </select>
+                <c-form-feedback [valid]="false">Example invalid select feedback</c-form-feedback>
+              </div>
+              <c-form-feedback [valid]="false">Please select role.</c-form-feedback>
+          </c-col>
+
+          <c-col md="4">
+            <label cLabel for="validationServer05">Department</label>
+            <div class="mb-3">
+              <select aria-label="select example" cSelect required>
+                <option value="">----SELECT---</option>
+                <option value="1">Sales</option>
+                <option value="2">HR</option>
+                <option value="3">IT</option>
+              </select>
+              <c-form-feedback [valid]="false">Example invalid select feedback</c-form-feedback>
+            </div>
+            <c-form-feedback [valid]="false">Please select department.</c-form-feedback>
+        </c-col>
+
+
+            <c-col xs="12">
+              <button cButton color="primary" type="submit">
+                Submit form
+              </button>
+            </c-col>
+          </form>
+
+      </c-card-body>
+    </c-card>
+  </c-col>

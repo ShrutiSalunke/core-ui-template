@@ -1,0 +1,83 @@
+
+<c-row ngPreserveWhitespaces>
+
+  <c-col xs="12">
+    <c-card class="mb-4">
+      <c-card-header style="display: flex; justify-content: space-between; align-items: center;">
+        <strong>Users</strong>
+        <c-nav-item>
+          <a cNavLink routerLink="/createUser" routerLinkActive="active"><button cButton color="primary">Create New User</button></a>
+        </c-nav-item>
+
+      </c-card-header>
+      <c-card-body>
+          <table [hover]="true" cTable>
+            <thead>
+            <tr>
+              <th scope="col">SR no</th>
+              <th scope="col">Username</th>
+              <th scope="col">Firstname</th>
+              <th scope="col">Lastname</th>
+              <th scope="col">Email</th>
+              <th scope="col">Roll</th>
+              <th scope="col">Department</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>mdo</td>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>fat</td>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td >Larry the Bird</td>
+              <td>twitter</td>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+
+            </tr>
+            </tbody>
+          </table>
+
+          <c-pagination align="end" aria-label="Page navigation example">
+            <li cPageItem [disabled]="true">
+              <span cPageLink [routerLink]>Previous</span>
+            </li>
+            <li cPageItem>
+              <a cPageLink [routerLink]>1</a>
+            </li>
+            <li cPageItem [active]="true">
+              <span cPageLink [routerLink]>2</span>
+            </li>
+            <li cPageItem>
+              <a cPageLink [routerLink]>3</a>
+            </li>
+            <li cPageItem>
+              <a cPageLink [routerLink]>Next</a>
+            </li>
+          </c-pagination>
+      </c-card-body>
+
+
+    </c-card>
+  </c-col>
+
+
+
+</c-row>
