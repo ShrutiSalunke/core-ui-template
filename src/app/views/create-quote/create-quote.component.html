@@ -7,116 +7,209 @@
       <c-card-body>
         <form cForm class="row g-3 needs-validation" ngNativeValidate>
 
-          <!-- SAP Quotation No. -->
+          <!-- Sales Quotation No. -->
           <c-col md="4">
-            <label cLabel for="sapQuotationNo">SAP Quotation No.</label>
-            <input cFormControl id="sapQuotationNo" required type="text" />
-            <c-form-feedback [valid]="false"></c-form-feedback>
+            <label cLabel for="salesQuotationNo">Sales Quotation No.</label>
+            <input cFormControl id="salesQuotationNo" required type="text" />
           </c-col>
 
-          <!-- Rev No. -->
+          <!-- Quote Revision No. -->
           <c-col md="4">
-            <label cLabel for="revNo">Rev No.</label>
-            <input cFormControl id="revNo" required type="text" value="00" />
-            <c-form-feedback [valid]="false">Please enter Rev No.</c-form-feedback>
+            <label cLabel for="quoteRevNo">Quote Revision No.</label>
+            <input cFormControl id="quoteRevNo" type="text" />
+          </c-col>
+
+          <!-- Quote Revision Date -->
+          <c-col md="4">
+            <label cLabel for="quoteRevDate">Quote Revision Date</label>
+            <input cFormControl id="quoteRevDate" type="date" required />
+
+          </c-col>
+
+          <!-- Customer Inquiry No. -->
+          <c-col md="4">
+            <label cLabel for="customerInquiryNo">Customer Inquiry No.</label>
+            <input cFormControl id="customerInquiryNo" required type="text" />
+
+          </c-col>
+
+          <!-- Sold-to Customer Number -->
+          <c-col md="4">
+            <label cLabel for="soldToCustomerNo">Sold-to Customer Number</label>
+            <input cFormControl id="soldToCustomerNo" required type="text" />
+
+          </c-col>
+
+          <!-- Ship-to Customer Number -->
+          <c-col md="4">
+            <label cLabel for="shipToCustomerNo">Ship-to Customer Number</label>
+            <input cFormControl id="shipToCustomerNo" required type="text" />
+
+          </c-col>
+
+          <!-- Sales Group -->
+          <c-col md="4">
+            <label cLabel for="salesGroup">Sales Group</label>
+            <input cFormControl id="salesGroup" type="text" />
           </c-col>
 
           <!-- Customer Name 1 -->
-          <c-col md="6">
+          <c-col md="4">
             <label cLabel for="customerName1">Customer Name 1</label>
             <input cFormControl id="customerName1" required type="text" />
-            <c-form-feedback [valid]="false">Please enter Customer Name 1.</c-form-feedback>
+
           </c-col>
 
           <!-- Customer Name 2 -->
-          <c-col md="6">
+          <c-col md="4">
             <label cLabel for="customerName2">Customer Name 2</label>
             <input cFormControl id="customerName2" type="text" />
           </c-col>
 
-          <!-- House & Street Name -->
-          <c-col md="6">
-            <label cLabel for="houseStreet">House & Street Name</label>
-            <input cFormControl id="houseStreet" type="text" />
-          </c-col>
-          <c-col md="6">
-
-          </c-col>
-          <!-- Valid From Date -->
-          <c-col md="6">
-            <label cLabel for="validFromDate">Valid From Date</label>
-            <input cFormControl id="validFromDate" required type="date" />
-            <c-form-feedback [valid]="false">Please enter a valid from date.</c-form-feedback>
+          <!-- Trading Currency -->
+          <c-col md="4">
+            <label cLabel for="tradingCurrency">Trading Currency</label>
+            <input cFormControl id="tradingCurrency" type="text" />
           </c-col>
 
-          <!-- Valid To Date -->
-          <c-col md="6">
-            <label cLabel for="validToDate">Valid To Date</label>
-            <input cFormControl id="validToDate" required type="date" />
-            <c-form-feedback [valid]="false">Please enter a valid to date.</c-form-feedback>
+          <!-- Term of Payment -->
+          <c-col md="4">
+            <label cLabel for="termOfPayment">Term of Payment</label>
+            <input cFormControl id="termOfPayment" type="text" required />
           </c-col>
 
-          <!-- Selection for Material Details -->
-          <c-col md="6">
-            <label cLabel>Selection for Material Details</label>
-            <div>
-              <input type="radio" cFormControl name="materialDetails" value="fullDescription" /> Full Material Description
-              <input type="radio" cFormControl name="materialDetails" value="4digitDescription" /> 4 Digit Description
-              <input type="radio" cFormControl name="materialDetails" value="basicMaterial" /> Basic Material
-              <input type="radio" cFormControl name="materialDetails" value="drawing" /> Drawing #
-            </div>
+          <!-- Incoterms -->
+          <c-col md="4">
+            <label cLabel for="incoterms">Incoterms</label>
+            <input cFormControl id="incoterms" type="text" />
+          </c-col>
+
+          <!-- Incoterms (Port) -->
+          <c-col md="4">
+            <label cLabel for="incotermsPort">Incoterms (Port)</label>
+            <input cFormControl id="incotermsPort" type="text" />
+          </c-col>
+
+          <!-- Sales Person No. -->
+          <c-col md="4">
+            <label cLabel for="salesPersonNo">Sales Person No.</label>
+            <input cFormControl id="salesPersonNo" required type="text" />
+          </c-col>
+
+          <!-- Delivery Date -->
+          <c-col md="4">
+            <label cLabel for="deliveryDate">Delivery Date</label>
+            <input cFormControl id="deliveryDate" type="date" required />
+            <c-form-feedback [valid]="false">Please enter a valid delivery date.</c-form-feedback>
+          </c-col>
+
+          <!-- Customer PO No. -->
+          <c-col md="4">
+            <label cLabel for="customerPONo">Customer PO No.</label>
+            <input cFormControl id="customerPONo" type="text" />
+          </c-col>
+
+          <!-- Approval Status -->
+          <c-col md="4">
+            <label cLabel for="approvalStatus">Approval Status</label>
+            <input cFormControl id="approvalStatus" type="text" />
+          </c-col>
+
+          <!-- Material Number -->
+          <c-col md="4">
+            <label cLabel for="materialNumber">Material Number</label>
+            <input cFormControl id="materialNumber" required type="text" />
+          </c-col>
+
+          <!-- Full Material Description -->
+          <c-col md="4">
+            <label cLabel for="fullMaterialDescription">Full Material Description</label>
+            <input cFormControl id="fullMaterialDescription" required type="text" />
           </c-col>
 
           <!-- Order Quantity -->
-          <c-col md="6">
+          <c-col md="4">
             <label cLabel for="orderQuantity">Order Quantity</label>
-            <input cFormControl id="orderQuantity" required type="number" />
-            <c-form-feedback [valid]="false">Please enter the order quantity.</c-form-feedback>
+            <input cFormControl id="orderQuantity" type="number" required />
           </c-col>
 
-          <!-- Discount Value -->
-          <c-col md="6">
-            <label cLabel for="discountValue">Discount Value</label>
-            <input cFormControl id="discountValue" required type="number" />
-            <c-form-feedback [valid]="false">Please enter the discount value.</c-form-feedback>
+          <!-- Price per Unit -->
+          <c-col md="4">
+            <label cLabel for="pricePerUnit">Price per Unit</label>
+            <input cFormControl id="pricePerUnit" type="number" required />
           </c-col>
 
-          <!-- Surcharge Value -->
-          <c-col md="6">
-            <label cLabel for="surchargeValue">Surcharge Value</label>
-            <input cFormControl id="surchargeValue" required type="number" />
-            <c-form-feedback [valid]="false">Please enter the surcharge value.</c-form-feedback>
+          <!-- Discount -->
+          <c-col md="4">
+            <label cLabel for="discount">Discount</label>
+            <input cFormControl id="discount" type="number" />
           </c-col>
 
-          <!-- Usage -->
-          <c-col md="6">
-            <label cLabel for="usage">Usage</label>
-            <select cSelect id="usage" required>
-              <option value="">Select Usage</option>
-              <option value="1">Option 1</option>
-              <option value="2">Option 2</option>
-              <option value="3">Option 3</option>
-            </select>
-            <c-form-feedback [valid]="false">Please select a usage option.</c-form-feedback>
+          <!-- Surcharge -->
+          <c-col md="4">
+            <label cLabel for="surcharge">Surcharge</label>
+            <input cFormControl id="surcharge" type="number" />
           </c-col>
 
-          <!-- Project ID -->
-          <c-col md="6">
-            <label cLabel for="projectId">Project ID</label>
-            <select cSelect id="projectId" required>
-              <option value="">Select Project ID</option>
-              <option value="1">Project 1</option>
-              <option value="2">Project 2</option>
-              <option value="3">Project 3</option>
-            </select>
-            <c-form-feedback [valid]="false">Please select a Project ID.</c-form-feedback>
+          <!-- Order Net Value -->
+          <c-col md="4">
+            <label cLabel for="orderNetValue">Order Net Value</label>
+            <input cFormControl id="orderNetValue" type="number" required />
           </c-col>
 
+          <!-- Item Details Table -->
+          <c-col xs="12">
+            <c-card class="mb-4">
+              <c-card-header>
+                <strong>Item Details</strong>
+              </c-card-header>
+              <c-card-body>
+                <div style="overflow-x: auto;">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Item Number</th>
+                        <th>Price</th>
+                        <th>UoM</th>
+                        <th>Material</th>
+                        <th>Material Description</th>
+                        <th>Discount (%)</th>
+                        <th>Quantity</th>
+                        <th>Actions</th> <!-- New column for actions -->
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let item of items; let i = index">
+                        <td><input type="number" [(ngModel)]="item.itemNumber" required /></td>
+                        <td><input type="number" [(ngModel)]="item.price" required /></td>
+                        <td>
+                          <select [(ngModel)]="item.uom">
+                            <option *ngFor="let uomOption of uomOptions" [value]="uomOption">{{uomOption}}</option>
+                          </select>
+                        </td>
+                        <td><input type="text" [(ngModel)]="item.material" required /></td>
+                        <td><input type="text" [(ngModel)]="item.materialDescription" required /></td>
+                        <td><input type="number" [(ngModel)]="item.discount" min="0" max="100" /></td>
+                        <td><input type="number" [(ngModel)]="item.quantity" required /></td>
+                        <td>
+                          <button (click)="removeItem(i)" class="btn btn-danger btn-sm">Delete</button> <!-- Delete button -->
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <button cButton color="secondary" (click)="addItem()">Add Item</button>
+              </c-card-body>
+            </c-card>
+          </c-col>
+
+          <!-- Submit Button -->
           <c-col xs="12">
             <button cButton color="primary" type="submit">
               Submit Quotation
             </button>
           </c-col>
+
         </form>
       </c-card-body>
     </c-card>
